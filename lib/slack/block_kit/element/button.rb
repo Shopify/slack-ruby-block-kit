@@ -13,7 +13,7 @@ module Slack
 
         TYPE = 'button'
 
-        def initialize(text:, action_id:, style: nil, emoji: nil, url: nil, value: nil)
+        def initialize(text:, action_id: nil, style: nil, emoji: nil, url: nil, value: nil)
           @text = Composition::PlainText.new(text: text, emoji: emoji)
           @action_id = action_id
           @url = url
